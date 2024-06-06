@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LikeView" customModule="pollexa" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="GaV-ip-bFm"/>
+                <outlet property="likeButton" destination="237-7D-gnh" id="07m-0g-dCQ"/>
+                <outlet property="likedImageView" destination="D3f-Eb-oAl" id="vAx-g5-51z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="129"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Option2" translatesAutoresizingMaskIntoConstraints="NO" id="D3f-Eb-oAl">
+                    <rect key="frame" x="0.0" y="0.0" width="172" height="129"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="172" id="UVJ-K6-Vva"/>
+                        <constraint firstAttribute="height" constant="129" id="oxP-KE-zzE"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="237-7D-gnh">
+                    <rect key="frame" x="8" y="91" width="30" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="VE7-NY-Jp1"/>
+                        <constraint firstAttribute="width" constant="30" id="aSO-PS-Yoq"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="like">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                    </state>
+                    <buttonConfiguration key="configuration" style="plain" image="like">
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                        <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="likedButtonTapped:" destination="-1" eventType="touchUpInside" id="kBO-2K-7Up"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="237-7D-gnh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="3bb-jB-dWL"/>
+                <constraint firstAttribute="bottom" secondItem="237-7D-gnh" secondAttribute="bottom" constant="8" id="N0K-bv-dzM"/>
+                <constraint firstItem="D3f-Eb-oAl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Trd-ws-b1X"/>
+                <constraint firstAttribute="trailing" secondItem="D3f-Eb-oAl" secondAttribute="trailing" id="clB-K4-aUF"/>
+                <constraint firstItem="D3f-Eb-oAl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fEg-8H-r4l"/>
+                <constraint firstAttribute="bottom" secondItem="D3f-Eb-oAl" secondAttribute="bottom" id="wEI-md-UD0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-118.32061068702289" y="101.40845070422536"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Option2" width="172" height="129"/>
+        <image name="like" width="30" height="30"/>
+    </resources>
+</document>
