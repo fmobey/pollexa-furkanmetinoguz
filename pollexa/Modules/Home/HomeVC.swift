@@ -156,6 +156,7 @@ extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 // MARK: - PollsCollectionViewCellDelegate
 
 extension HomeVC: PollsCollectionViewCellDelegate {
+    
     func didVote(in cell: PollsCollectionViewCell) {
         if let indexPath = collectionView.indexPath(for: cell) {
             viewModel.polls.remove(at: indexPath.row)
@@ -171,5 +172,4 @@ extension HomeVC: PollsCollectionViewCellDelegate {
     func didTapSecondLikeButton(in cell: PollsCollectionViewCell) {
         print("Second like button tapped in cell: \(cell)")
     }
-    
 }

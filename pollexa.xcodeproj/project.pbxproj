@@ -15,7 +15,6 @@
 		4C3B658D2C11C9A6004845B5 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B658C2C11C9A6004845B5 /* NSObject+Extensions.swift */; };
 		4C3B658F2C11E83D004845B5 /* LikeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B658E2C11E83D004845B5 /* LikeViewModel.swift */; };
 		4C8584C82C10F59D000D9988 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8584C72C10F59D000D9988 /* BaseViewController.swift */; };
-		4C8584CA2C10F5A9000D9988 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8584C92C10F5A9000D9988 /* BaseViewModel.swift */; };
 		4C8584CE2C110035000D9988 /* PollsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8584CC2C110035000D9988 /* PollsCollectionViewCell.swift */; };
 		4C8584CF2C110035000D9988 /* PollsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8584CD2C110035000D9988 /* PollsCollectionViewCell.xib */; };
 		4C8584D22C11B2B4000D9988 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8584D12C11B2B4000D9988 /* LikeView.swift */; };
@@ -59,7 +58,6 @@
 		4C3B658C2C11C9A6004845B5 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		4C3B658E2C11E83D004845B5 /* LikeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewModel.swift; sourceTree = "<group>"; };
 		4C8584C72C10F59D000D9988 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		4C8584C92C10F5A9000D9988 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		4C8584CC2C110035000D9988 /* PollsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollsCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C8584CD2C110035000D9988 /* PollsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PollsCollectionViewCell.xib; sourceTree = "<group>"; };
 		4C8584D12C11B2B4000D9988 /* LikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				4C8584C72C10F59D000D9988 /* BaseViewController.swift */,
-				4C8584C92C10F5A9000D9988 /* BaseViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -408,7 +405,6 @@
 				4CD4BDA52C10F06900BA0E24 /* AppDelegate.swift in Sources */,
 				4C3B65812C11BA46004845B5 /* PollCollectionViewModel.swift in Sources */,
 				4CD4BDE02C10F1A900BA0E24 /* HomeVC.swift in Sources */,
-				4C8584CA2C10F5A9000D9988 /* BaseViewModel.swift in Sources */,
 				4CD4BDA72C10F06900BA0E24 /* SceneDelegate.swift in Sources */,
 				4C8584D22C11B2B4000D9988 /* LikeView.swift in Sources */,
 				4C3B658D2C11C9A6004845B5 /* NSObject+Extensions.swift in Sources */,

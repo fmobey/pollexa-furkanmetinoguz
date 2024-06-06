@@ -11,10 +11,10 @@ final class ActivePollsView: UIView {
     
     // MARK: - Outlets
     
-    @IBOutlet var contentView: UIView!
-    @IBOutlet weak var activePollsLabel: UILabel!
-    @IBOutlet weak var detailLabel: UILabel!
-    @IBOutlet weak var detailButton: UIButton!
+    @IBOutlet private var contentView: UIView!
+    @IBOutlet private weak var activePollsLabel: UILabel!
+    @IBOutlet private weak var detailLabel: UILabel!
+    @IBOutlet private weak var detailButton: UIButton!
     
     // MARK: - Properties
     
@@ -40,12 +40,12 @@ final class ActivePollsView: UIView {
     
     func setData(viewModel: ActivePollsViewModel) {
         self.viewModel = viewModel
-        updateView()
+        setupUI()
     }
     
     // MARK: - Actions
     
-    @IBAction func detailButtonTapped(_ sender: Any) {
+    @IBAction private func detailButtonTapped(_ sender: Any) {
         viewModel?.detailButtonTapped?()
     }
 }
@@ -61,7 +61,7 @@ private extension ActivePollsView {
         contentView.layer.cornerRadius = 10
     }
     
-    func updateView() {
+    func setupUI() {
         guard let viewModel = viewModel else { return }
         activePollsLabel.text = viewModel.activePollsText
         detailLabel.text = viewModel.detailText
